@@ -6,7 +6,7 @@ import connectDB from "./config/db.js";
 import errorHandler from "./middleware/error-handler.js"
 import cors from "cors"
 
-import { authRoutes } from "./routes/index.js"
+import { authRoutes, documentRoutes } from "./routes/index.js"
 import EVENTS from "./constants/events.js";
 const app = express();
 
@@ -33,6 +33,7 @@ app.get("/hello", (req, res) => {
 
 
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/documents", documentRoutes)
 
 
 const startServer = async () => {
