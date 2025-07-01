@@ -11,7 +11,7 @@ import EVENTS from "./constants/events.js";
 const app = express();
 
 app.use(cors({
-  origin: ["*"],
+  origin: ["http://localhost:3000"],
   credentials: true,
   allowedHeaders: ["Content-Type", "Authorization"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
