@@ -1,2 +1,3 @@
 import authRoutes from "./auth.routes.js"
-export { authRoutes };
+import documentRoutes from "./document.routes.js"
+export { authRoutes, documentRoutes };
