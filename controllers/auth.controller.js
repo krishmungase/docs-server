@@ -53,7 +53,7 @@ export class AuthController {
     await this.notificationService.send({
       to: email,
       text: "Send mail",
-      subject: "Codify: Please Verify Your Email to Complete Registration",
+      subject: "Docs: Please Verify Your Email to Complete Registration",
       html: htmlTemplates.verifyEmail({
         fullName,
         verificationLink,
