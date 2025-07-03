@@ -8,6 +8,11 @@ class DocumentService {
   async getAllDocuments() {
     return this.documentModel.find({})
   }
+
+  async createDocument(document, userId) {
+    return this.documentModel.create({ ...document, ownerId: userId });
+  }
+
 }
 
 
