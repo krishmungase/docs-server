@@ -8,6 +8,22 @@ const documentSchema = new Schema(
       type: String,
       required: true,
     },
+    initialContent: {
+      type: String,
+      required: false,
+    },
+    ownerId: {
+      type: String,
+      required: true,
+    },
+    roomId: {
+      type: String,
+      required: false,
+    },
+    organizationId: {
+      type: String,
+      required: false,
+    },
   },
   { timestamps: true }
 );
